@@ -1,0 +1,67 @@
+// Default Input / Textarea
+
+input,
+textarea {
+	position: relative;
+	width: 100%;
+	// resize: none;
+	resize: vertical;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	padding: 13px 3px 13px 13px;
+	transition: 0.3s ease-in-out all;
+	font-family: var(--font-main);
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 20px;
+	color: var(--color-main);
+	margin: 4px 0px 16px;
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 20px;
+		color: rgba(0, 0, 0, 0.26);
+	}
+
+	&:focus {
+		border-color: var(--color-citrus);
+	}
+
+	@include transparent-bg-input();
+}
+
+textarea {
+	height: 100px;
+}
+
+@keyframes jelly {
+	from {
+		transform: scale(1, 1);
+	}
+
+	30% {
+		transform: scale(1.25, 0.75);
+	}
+
+	40% {
+		transform: scale(0.75, 1.25);
+	}
+
+	50% {
+		transform: scale(1.15, 0.85);
+	}
+
+	65% {
+		transform: scale(0.95, 1.05);
+	}
+
+	75% {
+		transform: scale(1.05, 0.95);
+	}
+
+	to {
+		transform: scale(1, 1);
+	}
+}
