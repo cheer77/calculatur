@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="icon" type="image/x-icon" href="./images/logo.png">
+		<title>Calculator</title>
+
+		<!-- SimpleBar (Custom scrollbar) https://github.com/Grsmto/simplebar/tree/master/packages/simplebar -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+		<link href="./css/style.css" type="text/css" rel="stylesheet">
+
+		<meta name="theme-color" content="#00223A">
+	</head>
+</html>
+
+
+<body>
+	<div id="site">
+		<main class="main">
+			<div class="calc-block">
+				<p class="calc-block__text">Light / Dark</p>
+				<div class="them-switcher">
+					<span></span>
+				</div>
+
+				<div class="calc">
+					<div class="calc__display">
+						<div class="calc__area"></div>
+
+						<div class="calc__total">
+							<span>0</span>
+						</div>
+					</div>
+
+					<div class="calc__btn-block">
+						<div class="calc__btns">
+							<div class="calc__btn clear" data-type="clear">C</div>
+							<div class="calc__btn func-btn" data-type="percent">%</div>
+							<div class="calc__btn func-btn" data-type="delete">⌫</div>
+							<div class="calc__btn func-btn" data-type="/">÷</div>
+						</div>
+						<div class="calc__btns">
+							<div class="calc__btn" data-type="7">7</div>
+							<div class="calc__btn" data-type="8">8</div>
+							<div class="calc__btn" data-type="9">9</div>
+							<div class="calc__btn func-btn" data-type="*">×</div>
+						</div>
+						<div class="calc__btns">
+							<div class="calc__btn" data-type="4">4</div>
+							<div class="calc__btn" data-type="5">5</div>
+							<div class="calc__btn" data-type="6">6</div>
+							<div class="calc__btn func-btn" data-type="-">-</div>
+						</div>
+						<div class="calc__btns">
+							<div class="calc__btn" data-type="1">1</div>
+							<div class="calc__btn" data-type="2">2</div>
+							<div class="calc__btn" data-type="3">3</div>
+							<div class="calc__btn func-btn" data-type="+">+</div>
+						</div>
+						<div class="calc__btns">
+							<div class="calc__btn" data-type="float">.</div>
+							<div class="calc__btn" data-type="0">0</div>
+							<div class="calc__btn" data-type="history">
+								<img src="images/history.svg">
+							</div>
+							<div class="calc__btn func-btn" data-type="=">=</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		
+
+  
+  <script src="js/main.js"></script>
+
+
+	</div>
+</body>
